@@ -1,0 +1,25 @@
+@charset "UTF-8";
+// SETUP
+@import 'setup/typography';
+@import 'setup/variables';
+
+// BASICS
+@import 'basics/base';
+@import 'basics/helpers';
+@import 'basics/layout';
+
+//Pages
+@import './pages/home-page';
+@import './pages/dashboard';
+@import './pages/login-signup-page';
+
+// COMPONENTS
+@import './components/app-footer';
+@import './components/app-header';
+@import './components/chat-app';
+@import './components/stay-list';
+@import './components/stay-preview';
+@import './components/trip-settings';
+@import './components/stay-filter';
+@import './components/explore-btns';
+@import './components/user-details';

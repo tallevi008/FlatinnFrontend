@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'airbnb-regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:hover {
+  background-color: #f7f7f7;
+  border-radius: 22px;
+}
+
+a {
+  color: #464646;
+  text-decoration: none;
+  padding: 12px;
+  padding-right: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+a:hover {
+  background-color: #f7f7f7;
+  border-radius: 22px;
+}

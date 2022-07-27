@@ -1,0 +1,107 @@
+.stay-preview {
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  cursor: pointer;
+
+  .like-stay-img {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 9;
+    color: rgba(0, 0, 0, 0.1019607843137255);
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    height: 24px;
+    width: 24px;
+  }
+
+  .el-carousel__button {
+    height: 6px;
+    width: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .el-carousel__arrow {
+    color: #222;
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    box-shadow: 0 0 0 1px transparent, 0 0 0 4px transparent, 0 2px 4px rgba(0, 0, 0, 0.18);
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .stay-preview-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .stay-preview-content {
+    height: 107px;
+    color: #222;
+
+    .stay-preview-content-reviews {
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      font-size: 0.875rem;
+      height: 25%;
+
+      .img-star {
+        margin-right: 0.25rem;
+        width: 0.9rem;
+        filter: invert(34%) sepia(91%) saturate(3121%) hue-rotate(328deg) brightness(100%) contrast(103%);
+      }
+
+      .reviews-rate {
+        color: #222222;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .reviews-number {
+        color: #717171;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .stay-preview-details {
+      display: flex;
+      // height: 25%;
+      align-items: center;
+      padding-top: 6px;
+      color: #343434;
+      font-size: 18px;
+      font-weight: 400;
+
+      .stay-preview-details-span {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 4px;
+        font-size: 9px;
+      }
+    }
+
+    .stay-preview-desc {
+      display: flex;
+      align-items: center;
+      padding-top: 2px;
+      color: #343434;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .stay-preview-price {
+      display: flex;
+      height: 25%;
+      align-items: center;
+      padding-top: 4px;
+
+      .stay-preview-price-span {
+        font-weight: 700;
+      }
+    }
+  }
+}

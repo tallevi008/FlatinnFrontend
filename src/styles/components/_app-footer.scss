@@ -1,0 +1,126 @@
+.details {
+  // width: 1280px;
+  width: 1119px;
+}
+
+.app-footer {
+  // margin-right: 80px;
+  // margin-left: 80px;
+  margin: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+  height: 7vh;
+  max-width: 1600px;
+
+  @media (max-width: 1127px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    height: 123px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  @media (max-width: 743px) {
+    margin-right: 24px;
+    margin-left: 24px;
+    align-items: flex-start;
+  }
+
+  .app-footer-left-div {
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    color: #222222;
+    font-size: 0.875rem;
+
+    @media (max-width: 1127px) {
+      order: 1;
+      flex-direction: column;
+
+      .bullet-first {
+        display: none;
+      }
+    }
+
+    @media (max-width: 743px) {
+      align-items: flex-start;
+
+      .app-footer-copyrights {
+        width: 200px;
+      }
+    }
+
+    .app-footer-links {
+      display: flex;
+
+      .app-footer-bullet {
+        width: 1.1875rem;
+        text-align: center;
+        color: #484848;
+      }
+    }
+  }
+
+  .footer-right-div {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    align-items: center;
+
+    @media (max-width: 1440px) {
+      width: 320px;
+    }
+
+    @media (max-width: 743px) {
+      width: 260px;
+    }
+
+    .app-footer-currency {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 10vw;
+      font-size: 0.875rem;
+      color: #222222;
+      font-weight: 600;
+
+      @media (max-width: 1440px) {
+        width: 150px;
+      }
+
+      .img-globe {
+        width: 1rem;
+        filter: invert(13%) sepia(2%) saturate(18%) hue-rotate(314deg)
+          brightness(103%) contrast(101%);
+      }
+
+      .app-footer-currency-span {
+        text-decoration: underline;
+      }
+    }
+
+    .app-footer-socials {
+      width: 6vw;
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 1440px) {
+        width: 90px;
+      }
+
+      @media (max-width: 743px) {
+        display: none;
+      }
+
+      .app-footer-socials-svg {
+        width: 1.2rem;
+      }
+    }
+  }
+}
