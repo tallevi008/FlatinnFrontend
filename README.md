@@ -1,6 +1,6 @@
 # Homebnb-frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+End to End project that was inspired by Airbnb named Flat-inn [Click here to check it out](https://flat-inn-101.herokuapp.com/).
 
 ## Recommended IDE Setup
 
