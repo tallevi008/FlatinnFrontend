@@ -1,7 +1,7 @@
-import { fileURLToPath, URL } from 'url'
+import { fileURLToPath, URL } from 'url';
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,9 +12,9 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '../backend/public',
+    outDir: '../FlatinnBackend/public',
     emptyOutDir: true,
     chunkSizeWarningLimit: 5000,
     css: { preprocessorOptions: { css: { charset: false } } },
   },
-})
+});
