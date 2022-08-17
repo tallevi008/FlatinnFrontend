@@ -28,16 +28,7 @@
           <div class="dashboard-data data-orders">
             <h4 class="dashboard-data-orders-title data-title">Total Orders</h4>
             <div class="dashboard-data-orders-status-con">
-              <!-- <div class="dashboard-data-orders-status-con-top"> -->
-              <!-- <div class="dashboard-data-orders-status">
-                  <span class="dashboard-data-orders-status-title">Total</span>
-                  <span
-                    class="dashboard-data-orders-status-number status-total"
-                    >{{ ordersForDisplay.length }}</span
-                  >
-                </div> -->
-              <!-- </div> -->
-              <!-- <div class="dashboard-data-orders-status-con-bottom"> -->
+   -->
               <div class="dashboard-data-orders-status">
                 <span class="dashboard-data-orders-status-title">Approved</span>
                 <span
@@ -110,12 +101,7 @@
                   >${{ revenueYear.toLocaleString() }}</span
                 >
               </div>
-              <!-- <div class="dashboard-data-revenues-period period-total">
-                <span class="dashboard-data-revenues-period-total">Total</span>
-                <span class="dashboard-data-revenues-period-total">{{
-                  revenueTotal
-                }}</span>
-              </div> -->
+       
             </div>
           </div>
         </div>

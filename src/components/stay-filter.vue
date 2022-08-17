@@ -115,9 +115,6 @@
       </div>
     </div>
 
-    <!-- <div class="search-btn-container input-container"> -->
-    <!-- <el-button :icon="Search" size="large" class="search-btn" @click="setfilterParams" color="#ff385c" style="color: white" circle> </el-button> -->
-    <!-- </div> -->
   </section>
 </template>
 

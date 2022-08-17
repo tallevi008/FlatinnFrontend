@@ -16,15 +16,8 @@
     </h4>
     <h4 v-else>No match found</h4>
 
-    <!-- <h4 v-if="$route.query.address" class="stay-list-title">
-    {{ stays.length }} stays in
-    {{ stays[0].address.city }} 
-  </h4>
-  <h4 v-else-if="!stays.length">Explore the world!</h4>
-  <h4 v-else>No match found</h4> -->
     <br />
-    <!-- Buttons for additional filtters -->
-    <!-- <expolore-btns class="explore-btns" /> -->
+
     <section class="explore-btns">
       <button
         @click.stop.prevent="togglePrice"
@@ -287,18 +280,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-.full-body {
-  height: calc(100vh - 150px);
-  width: 100%;
-}
-.load-img-con {
-  /* margin: 0 auto; */
-  margin: auto;
-  margin-top: 100px;
-  /* background-color: yellow; */
-  width: fit-content;
-  /* top: 35%; */
-  /* position: absolute; */
-}
-</style>
+<style scoped></style>

@@ -45,47 +45,39 @@ export default {
     return {
       stays: null,
       stayToEdit: null,
-      displayMsg: "Loading...",
+      displayMsg: 'Loading...',
     };
   },
   methods: {
     update() {
-      console.log("stay to update=", this.stayToEdit);
-      this.$store.dispatch({ type: "update", stayToUpdate: this.stayToEdit });
+      console.log('stay to update=', this.stayToEdit);
+      this.$store.dispatch({ type: 'update', stayToUpdate: this.stayToEdit });
     },
   },
   async created() {
-    this.$store.commit({ type: "setCurrPage", page: "stayEdit" });
-    console.log("params=", this.$route.params);
+    this.$store.commit({ type: 'setCurrPage', page: 'stayEdit' });
+    console.log('params=', this.$route.params);
 
     const { id } = this.$route.params;
 
     if (id) {
       const foundStay = await this.$store.dispatch({
-        type: "getById",
+        type: 'getById',
         stayId: id,
       });
 
-      console.log("foundStay main=", foundStay);
+      console.log('foundStay main=', foundStay);
       if (foundStay) {
         this.stayToEdit = JSON.parse(JSON.stringify(foundStay));
 
-        console.log("found id=", this.stayToEdit);
+        console.log('found id=', this.stayToEdit);
       } else {
-        console.log("no such id");
-        this.displayMsg = "no such id";
+        console.log('no such id');
+        this.displayMsg = 'no such id';
       }
     }
   },
 };
 </script>
 
-<style scoped>
-img {
-  width: 200px;
-  height: 120px;
-}
-/* #toggle {
-  position: absolute;
-} */
-</style>
+<style scoped></style>

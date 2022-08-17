@@ -1,9 +1,5 @@
 <template>
   <section class="app-main stay-app">
-    <!-- <stay-filter /> -->
-    <!-- <div class="space-con">&nbsp;</div> -->
-    <!-- <div> -->
-    <!-- </div> -->
     <stay-list v-if="stays" :stays="stays" @btnsFilter="onBtnFilter" />
   </section>
 </template>
@@ -37,10 +33,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.space-con {
-  width: 100%;
-  height: 65px;
-  /* background-color: blue; */
-}
-</style>
+<style scoped></style>

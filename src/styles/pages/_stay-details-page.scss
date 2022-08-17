@@ -1,0 +1,470 @@
+.details-main-con {
+    margin-top: 26px;
+    /* margin 200px original */
+    /* margin-left: 13vw;
+  margin-right: 13vw; */
+    /* margin-left: 13%;
+  margin-right: 13%; */
+    margin-left: 390px;
+    margin-right: 390px;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+    .details-main-con {
+        margin-left: 390px;
+        margin-right: 390px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .details-main-con {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .gallery-grid {
+        width: 90%;
+        /* background: yellow; */
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .details-main-con {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .gallery-grid {
+        width: 90%;
+        /* background: blue; */
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .details-main-con {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .gallery-grid {
+        width: 90%;
+        /* background: purple; */
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+    .details-main-con {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .gallery-grid {
+        width: 100%;
+        /* background: black; */
+    }
+}
+.order-dialog-main-con {
+    position: sticky;
+    top: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+    width: 372px;
+
+    /* min-height: 298px; */
+    /* height: 278px; */
+    height: fit-content;
+    border-radius: 12px;
+    margin-top: -4px;
+    border: 1px solid #dddddd;
+}
+.order-form-price {
+    font-weight: bold;
+    font-size: 21px;
+}
+.order-form-submit {
+    /* position: absolute; */
+    /* z-index: -10; */
+    margin: 0 auto;
+    width: 322px;
+    height: 48px;
+    cursor: pointer;
+    /* background: #e11a60; */
+
+    background-image: linear-gradient(to right, #e61e4e, #d70466);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-family: airbnb-regular, sans-serif;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-form-submit-disabled {
+    /* position: absolute; */
+    /* z-index: -10; */
+    margin: 0 auto;
+    width: 322px;
+    height: 50px;
+    cursor: pointer;
+    /* background: #e11a60; */
+
+    background-image: linear-gradient(to right, #919191, #b0b0b0) !important;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    pointer-events: none;
+    letter-spacing: 0.8px;
+    font-family: airbnb-regular, sans-serif;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-form-top-con {
+    /* background-color: blue; */
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.details-stay-name {
+    margin-bottom: 12px;
+    font-size: 23.5px;
+    line-height: 27px;
+    color: black;
+    font-weight: 700;
+}
+.details-stay-short-info {
+    margin-bottom: 23px;
+    color: black;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    display: flex;
+    justify-content: space-between;
+}
+.details-stay-short-info-address {
+    color: gray;
+    text-decoration: underline;
+}
+.details-stay-short-info-address-reviews {
+    color: black;
+    text-decoration: underline;
+}
+.details-stay-short-info-right {
+    /* background-color: aqua; */
+    /* height: 15px; */
+    /* padding: 0px; */
+    align-items: center;
+    display: flex;
+}
+.middle-con {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    margin-top: 52px;
+    /* background-color: yellow; */
+}
+.middle-con-sec1 {
+    width: 654px;
+    /* height: 1875px; */
+    /* background-color: blue; */
+}
+.middle-con-sec2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 466px;
+    /* height: 1875px; */
+    /* background-color: red; */
+}
+
+.amenities-btn {
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    width: 208px;
+    height: 47px;
+    color: black;
+    background-color: white;
+    line-height: 20px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.amenities-btn:hover {
+    text-decoration: underline;
+    /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif; */
+}
+.section-calendar {
+    width: 100%;
+    height: 284px;
+}
+.section-calendar-btn {
+    color: black;
+}
+.section-calendar-btn:hover {
+    background-color: lightgray;
+}
+
+.order-form-check-in-btn {
+    cursor: pointer;
+    text-align: left;
+    height: 56px;
+    /* width: 50%; */
+    width: 162px;
+    margin: 0px !important;
+    border-radius: 8px 0 0 0 !important;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+/* .order-form-check-in-btn > * {
+  margin: 5px;
+} */
+.order-form-check-out-btn {
+    cursor: pointer;
+    text-align: left;
+    height: 56px;
+    /* width: 50%; */
+    width: 160px;
+    margin: 0px !important;
+    border-radius: 0 8px 0 0 !important;
+    border: 1px solid gray;
+    border-bottom: none;
+    border-left: none;
+}
+.order-form-guest-btn {
+    cursor: pointer;
+    text-align: left !important;
+    height: 57px;
+    /* width: 100%; */
+    /* background: purple; */
+    width: 322px;
+    border-radius: 0 0 8px 8px !important;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    cursor: pointer;
+}
+.order-form-middle-con {
+    width: 365px;
+    margin-bottom: 15px;
+}
+.check {
+    font-weight: bold;
+    font-size: 10px;
+}
+.add-dates {
+    /* font-weight: bold; */
+    /* font-weight: 100; */
+    font-size: 14px;
+    color: #757575;
+}
+
+.check,
+.add-dates {
+    /* margin-left: 5px; */
+    margin: 5px;
+}
+.order-form-night {
+    font-size: 17px;
+}
+.space-con {
+    width: 100%;
+    /* height: 65px; */
+    height: 0px;
+    background-color: blue;
+}
+
+.guest-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.guest-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.guests-modal {
+    /* float: left; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    top: 8.5rem;
+    right: 18.75rem;
+    width: 21.87rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+    z-index: 2;
+    padding: 1.25rem;
+    gap: 20px;
+}
+.close-modal-btn {
+    justify-self: flex-end;
+    cursor: pointer;
+    margin: 0;
+    /* margin-bottom: -20px; */
+    /* background: blue; */
+    text-align: right;
+    padding: 0;
+    align-self: flex-end;
+}
+
+.modal-txt {
+    display: flex;
+    flex-direction: column;
+}
+.modal-btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border: 1px solid #b0b0b0;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    color: #717171;
+    text-align: center;
+}
+
+.save-btn,
+.share-btn {
+    color: black;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.date-modal {
+    /* float: left; */
+    position: absolute;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.review-address-flex {
+    /* background-color: red; */
+    display: flex;
+}
+
+.services-img {
+    width: 20px;
+    height: auto;
+}
+
+.amenities-img {
+    width: 19px;
+    height: auto;
+}
+.order-form-guest-btn-sec1 {
+    margin-top: 5px;
+}
+
+.order-form-guest-btn-sec2 {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    height: 100%;
+}
+
+.guest-btn {
+    border: 1px solid #b0b0b0;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    color: #717171;
+    text-align: center;
+    cursor: pointer;
+    /* background: green; */
+}
+
+.date-modal-btn-layout {
+    margin-top: 10px;
+    /* background-color: green; */
+    text-align: right;
+
+    /* //     <button class="date-close-btn" @click="closeDateModal">Close</button>
+    // <button class="date-clear-btn" @click="clearDateModal">Clear</button> */
+}
+.guest-close-btn,
+.date-clear-btn {
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 0.7;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.date-close-btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    line-height: 18px;
+    font-weight: 600;
+    height: 34px;
+    width: 70px;
+    cursor: pointer;
+}
+.guest-modal-btn-layout {
+    width: 100%;
+    text-align: right;
+    margin-top: -6px;
+}
+
+.pre-charge-msg {
+    margin-bottom: 20px;
+    margin-top: 16px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(34, 34, 34);
+    text-align: center;
+}
+
+.total-price,
+.service-fee,
+.cleaning-fee,
+.cost-calc {
+    margin-bottom: 7px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.service-fee-title,
+.cleaning-fee-title,
+.cost-calc-title {
+    text-decoration: underline;
+}
+
+.service-fee {
+    margin-bottom: 28px;
+}
+
+.total-price {
+    letter-spacing: 0.4px;
+    font-weight: bold;
+}
+.cost-elem {
+    /* text-decoration: none; */
+    letter-spacing: 0.5px;
+}
