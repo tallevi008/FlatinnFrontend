@@ -1113,8 +1113,6 @@ input {
 }
 
 hr {
-  /* border: 0.1px solid #dddddd; */
-  /* border: 1px solid #dddddd; */
   background-color: #dddddd;
   height: 1px;
   border: none;

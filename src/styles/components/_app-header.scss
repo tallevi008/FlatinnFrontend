@@ -1,16 +1,17 @@
 .app-header-con {
+  // background-color: rgb(223, 104, 1);
   background-color: white;
+
   position: sticky;
   top: 0;
   z-index: 10;
   height: 80px;
-
+  padding: 0px 30px;
   .hideFilter {
     display: none;
   }
 
   .details {
-    // width: 1280px;
     width: 1119px;
   }
 
@@ -19,15 +20,8 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    // padding-left: 80px;
-    // padding-right: 80px;
     margin: auto;
-    max-width: 1600px;
-
-    @media (max-width: 1127px) {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
+    max-width: 100%;
 
     .small-filter-div {
       width: 348px;
@@ -84,16 +78,11 @@
         font-family: airbnb-regular;
         font-weight: 600;
         line-height: 1px;
-
-        @media (max-width: 1127px) {
-          display: none;
-        }
       }
 
       .logo-img {
         width: 1.9rem;
-        filter: invert(34%) sepia(91%) saturate(3121%) hue-rotate(328deg)
-          brightness(100%) contrast(103%);
+        filter: invert(34%) sepia(91%) saturate(3121%) hue-rotate(328deg) brightness(100%) contrast(103%);
       }
     }
 
@@ -126,8 +115,7 @@
         }
         .img-globe {
           width: 1rem;
-          filter: invert(13%) sepia(2%) saturate(18%) hue-rotate(314deg)
-            brightness(103%) contrast(101%);
+          filter: invert(13%) sepia(2%) saturate(18%) hue-rotate(314deg) brightness(103%) contrast(101%);
         }
 
         .hamburger {
@@ -158,16 +146,12 @@
           flex-direction: column;
           position: absolute;
           top: 70px;
-          right: 152px;
+          right: 10px;
           border-radius: 12px 12px;
           width: 240px;
           box-shadow: 0 0 3px 0 rgb(0 0 0 / 18%);
           background-color: #fff;
           z-index: 10;
-
-          @media (max-width: 1760px) {
-            right: 81px;
-          }
 
           .menu-modal-link {
             font-size: 14px;

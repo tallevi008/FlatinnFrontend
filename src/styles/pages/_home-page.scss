@@ -2,9 +2,12 @@
   background: black;
   margin: 0 auto;
   // background: url('../assets/img/homepage/main.jpeg') no-repeat;
-  background: url('../assets/img/homepage/main2.jpg') no-repeat;
-  background-size: 100%;
-  height: 855px;
+  background: url("../assets/img/homepage/main2.jpg") no-repeat;
+  background-size: cover;
+  // width: 100vw;
+  height: calc(100vh - 80px); //minus 80px nav hight:
+
+  // height: 855px;
   width: 100%;
   background-position: 50%;
   .con-sentence {
@@ -33,7 +36,7 @@
   margin-top: 111px;
   margin-left: 0;
   margin-right: 0;
-  background: url('../assets/img/homepage/host2.jpg') no-repeat;
+  background: url("../assets/img/homepage/host2.jpg") no-repeat;
   background-size: 100%;
   height: 640px;
   width: 100%;
@@ -83,18 +86,14 @@
 
 .destenations {
   margin-top: 92px;
-  display: grid;
-  grid-template-rows: max-content max-content max-content max-content;
-  grid-template-columns: 153px 1fr 153px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   max-width: 100%;
   background-color: #fff;
-  .test-grid11 {
-    // padding: 20px;
-    // background-color: black;
-    max-width: 100%;
-  }
-  .category-title {
-    margin-top: 90px;
+
+  .destnations-main-title {
     display: flex;
     align-items: flex-start;
     padding-bottom: 25px;
@@ -102,70 +101,45 @@
     font-weight: 400;
     font-family: airbnb-medium;
   }
-  .popular-title {
-    display: flex;
-    align-items: flex-start;
-    padding-bottom: 25px;
-    font-size: 42px;
-    font-weight: 400;
-    font-family: airbnb-medium;
-  }
-}
-.dest-con1 {
-  display: flex;
-  max-width: 100%;
-  // padding: 0;
-  // margin: 0;
-  width: 100%;
-  // background-color: blue;
-  justify-content: space-between;
-}
-.dest-info {
-  // border: 10px solid black;
-  img {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-  }
-  .img-con10 {
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    // background-color: white;
-  }
-}
-
-.dest-grid {
-  display: flex;
-  min-width: auto;
-
-  //   grid-auto-columns: minmax(0, 1fr);
-  // grid-auto-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  // grid-auto-flow: column;
-  max-width: 100%;
-  gap: 28px;
-  .dest-title {
-    // font-size: 2vw;
-    font-size: 1.3125rem; //21px
-    font-weight: 700;
-    // background-color: lightseagreen;
-  }
-  .img-con10 {
+  // .dest-info {
+  //   .dest-img-con {
+  //     width: 100%;
+  //     height: 100%;
+  //     border: 1px solid black;
+  //     // background-color: white;
+  //     img {
+  //       width: 80%;
+  //       height: auto;
+  //       border-radius: 10px;
+  //     }
+  //   }
+  // }
+  .dest-grid {
+    display: grid;
+    justify-self: center;
     min-width: auto;
-    aspect-ratio: 1 / 1;
-    // background-color: blue;
-    // border: 1px solid black;
-    width: 100%;
-    max-width: 100%;
-    // padding-bottom: 30%;
-  }
-  .img1 {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    cursor: pointer;
+    grid-template-columns: repeat(4, 0.2fr);
+    justify-content: center;
+    // width: 100%;
+    gap: 2em;
+    .dest-title {
+      // font-size: 2vw;
+      font-size: 1.3125rem; //21px
+      font-weight: 700;
+    }
+
+    .dest-img-con {
+      width: 100%;
+      height: 100%;
+
+      .dest-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -178,43 +152,6 @@
   margin-left: 0;
   z-index: 5;
 }
-
-// detials page
-// .gallery-grid {
-//   width: 800px;
-//   height: 300px;
-//   display: grid;
-//   grid-template-areas:
-//     'a a b1 b2'
-//     'a a b3 b4';
-//   grid-template-columns: 1fr 1fr 1fr 1fr;
-//   grid-template-rows: 1fr 1fr;
-//   grid-area: featured;
-
-//   .main-pic {
-//     grid-area: a;
-//     width: 100%;
-//     height: 100%;
-//   }
-//   .sub-pic1-con {
-//     grid-area: b1;
-//     display: flex;
-//   }
-//   .sub-pic1 {
-//     width: 100%;
-//   }
-//   .sub-pic2 {
-//     grid-area: b2;
-//     position: relative;
-//     display: block;
-//   }
-//   .sub-pic3 {
-//     grid-area: b3;
-//   }
-//   .sub-pic4 {
-//     grid-area: b4;
-//   }
-// }
 
 .gallery-grid {
   margin: auto;
@@ -613,8 +550,7 @@
     letter-spacing: 0.4px;
     font-weight: 600;
     color: rgb(34, 34, 34);
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-      'Helvetica Neue', sans-serif;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   }
 }
 

@@ -1,0 +1,121 @@
+/** main-layout-queries **/
+
+/** responsive **/
+@media (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+
+    .main-layout {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-layout {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-layout {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-layout {
+        max-width: 1140px;
+    }
+}
+
+/*********************************/
+
+/**  stay-details-queries  **/
+
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+    .details-main-con {
+        margin-left: 390px;
+        margin-right: 390px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .details-main-con {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .gallery-grid {
+        width: 90%;
+        /* background: yellow; */
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .details-main-con {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .gallery-grid {
+        width: 90%;
+        /* background: blue; */
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .details-main-con {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .gallery-grid {
+        width: 90%;
+        /* background: purple; */
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+    .details-main-con {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .gallery-grid {
+        width: 100%;
+        /* background: black; */
+    }
+}
+
+/*********************************/
+
+/** header queries **/
+
+@media (max-width: 550px) {
+    .main-nav-host {
+        display: none;
+    }
+}
+
+@media (max-width: 1127px) {
+    .app-header-con {
+        padding: 0px 10px;
+        .app-header {
+        }
+        .logo-con {
+            display: none;
+        }
+
+        .small-filter-div {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1760px) {
+    .menu-btn-modal {
+        right: 81px;
+    }
+}
+
+/*********************************/
+
+/**  home-page-queries  **/
+
+@media (max-width: 1200px) {
+    .dest-grid {
+    }
+}

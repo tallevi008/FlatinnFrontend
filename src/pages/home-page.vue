@@ -3,12 +3,11 @@
     <!-- <div class="filter-cont">
       <stay-filter v-if="getFilterShown"></stay-filter>
     </div> -->
-    <div v-show="isFilterUp">
-      <br />
-      <br />
-      <!-- <button @click="test1000">Test1</button> -->
-      <stay-filter></stay-filter>
-    </div>
+    <!-- <div v-show="isFilterUp"> -->
+    <!-- <br />
+      <br /> -->
+    <!-- <stay-filter></stay-filter>
+    </div> -->
     <div class="con-sentence">
       <div class="sentence">
         <span>Let your curiosity do the booking</span>
@@ -17,100 +16,83 @@
     </div>
   </div>
 
-  <!-- <el-button type="primary">Primary</el-button> -->
   <div class="destenations">
-    <div class="item1" style="background-color: "></div>
-    <div class="popular-title" style="background-color: ">
-      Popular Destinations
-    </div>
-    <div class="item3" style="background-color: "></div>
-    <div class="item4" style="background-color: "></div>
-    <div class="item5" style="background-color: ">
-      <div class="dest-grid">
-        <div class="img-con10" style="background-color: ">
-          <img
-            @click="setfilterParams"
-            class="img1"
-            src="../assets/img/dest/Hong.Kong.jpg"
-          />
-          <div class="dest-title">Hong-Kong</div>
-        </div>
-        <div class="img-con10" style="background-color: ">
-          <img
-            @click="setfilterParams"
-            class="img1"
-            src="../assets/img/dest/Barcelona.jpg"
-          />
-          <div class="dest-title">Barcelona</div>
-        </div>
-        <div class="img-con10" style="background-color: ">
-          <img
-            @click="setfilterParams"
-            class="img1"
-            src="../assets/img/dest/New.York.jpg"
-          />
-          <div class="dest-title">New york</div>
-        </div>
-        <div class="img-con10" style="background-color: ">
-          <img
-            @click="setfilterParams"
-            class="img1"
-            src="../assets/img/dest/Sydney.jpg"
-          />
-          <div class="dest-title">Sydney</div>
-        </div>
+    <div class="destnations-main-title">Popular Destinations</div>
+    <div class="dest-grid">
+      <div class="dest-img-con">
+        <img
+          @click="setfilterParams"
+          class="dest-img"
+          src="../assets/img/dest/Hong.Kong.jpg"
+        />
+        <div class="dest-title">Hong-Kong</div>
+      </div>
+      <div class="dest-img-con">
+        <img
+          @click="setfilterParams"
+          class="dest-img"
+          src="../assets/img/dest/Barcelona.jpg"
+        />
+        <div class="dest-title">Barcelona</div>
+      </div>
+      <div class="dest-img-con">
+        <img
+          @click="setfilterParams"
+          class="dest-img"
+          src="../assets/img/dest/New.York.jpg"
+        />
+        <div class="dest-title">New york</div>
+      </div>
+      <div class="dest-img-con">
+        <img
+          @click="setfilterParams"
+          class="dest-img"
+          src="../assets/img/dest/Sydney.jpg"
+        />
+        <div class="dest-title">Sydney</div>
       </div>
     </div>
-    <div class="item6" style="background-color: "></div>
-    <div class="item7" style="background-color: "></div>
-    <div class="category-title" style="background-color: ">Categories</div>
-    <div class="item5" style="background-color: "></div>
-    <div class="item7" style="background-color: #"></div>
-    <div class="item5" style="background-color: #">
-      <div class="dest-grid">
-        <div class="img-con10" style="background-color: ">
-          <img
-            @click="goToExploreCategories"
-            class="img1"
-            src="../assets/img/category/butiqe.jpg"
-          />
-          <div class="dest-title">Boutique</div>
-        </div>
-        <div class="img-con10" style="background-color: ">
-          <img
-            @click="goToExploreCategories"
-            class="img1"
-            src="../assets/img/category/flat.jpg"
-          />
-          <div class="dest-title">Flat</div>
-        </div>
-        <div class="img-con10" style="background-color: ">
-          <img
-            @click="goToExploreCategories"
-            class="img1"
-            src="../assets/img/category/hotel.jpg"
-          />
-          <div class="dest-title">Hotel</div>
-        </div>
-        <div class="img-con10" style="background-color: ">
-          <img
-            @click="goToExploreCategories"
-            class="img1"
-            src="../assets/img/category/garden1.jpg"
-          />
-          <div class="dest-title">Garden</div>
-        </div>
+    <div class="dest-grid">
+      <div class="dest-img-con">
+        <img
+          @click="goToExploreCategories"
+          class="dest-img"
+          src="../assets/img/category/butiqe.jpg"
+        />
+        <div class="dest-title">Boutique</div>
+      </div>
+      <div class="dest-img-con">
+        <img
+          @click="goToExploreCategories"
+          class="dest-img"
+          src="../assets/img/category/flat.jpg"
+        />
+        <div class="dest-title">Flat</div>
+      </div>
+      <div class="dest-img-con">
+        <img
+          @click="goToExploreCategories"
+          class="dest-img"
+          src="../assets/img/category/hotel.jpg"
+        />
+        <div class="dest-title">Hotel</div>
+      </div>
+      <div class="dest-img-con">
+        <img
+          @click="goToExploreCategories"
+          class="dest-img"
+          src="../assets/img/category/garden1.jpg"
+        />
+        <div class="dest-title">Garden</div>
       </div>
     </div>
-    <div class="item5" style="background-color: #"></div>
   </div>
   <div class="host-container">
     <div class="host-title-container">
       <label class="host-title">Questions about hosting?</label>
     </div>
     <br />
-    <button class="host-btn" onclick="alert('bla')">Learn more</button>
-    <!-- <el-button class="host-btn" color="gray" style="color: #ebebeb">Learn more</el-button> -->
+    <button class="host-btn">Learn more</button>
     <div class="filter-cont"></div>
   </div>
 </template>
@@ -172,7 +154,10 @@ export default {
   },
   computed: {
     isFilterUp() {
-      console.log('homepage this.$store.getters.isFilterUp =', this.$store.getters.isFilterUp);
+      console.log(
+        'homepage this.$store.getters.isFilterUp =',
+        this.$store.getters.isFilterUp
+      );
       return this.$store.getters.isFilterUp;
     },
     getCom() {
