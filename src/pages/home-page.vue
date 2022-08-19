@@ -1,13 +1,11 @@
 <template>
   <div class="main-container">
-    <!-- <div class="filter-cont">
+    <!--  <div class="filter-cont">
       <stay-filter v-if="getFilterShown"></stay-filter>
     </div> -->
-    <!-- <div v-show="isFilterUp"> -->
-    <!-- <br />
-      <br /> -->
-    <!-- <stay-filter></stay-filter>
-    </div> -->
+    <div class="filter-cont-in-home-page" v-show="isFilterUp">
+      <stay-filter></stay-filter>
+    </div>
     <div class="con-sentence">
       <div class="sentence">
         <span>Let your curiosity do the booking</span>
@@ -93,7 +91,7 @@
     </div>
     <br />
     <button class="host-btn">Learn more</button>
-    <div class="filter-cont"></div>
+    <!-- <div class="filter-cont"></div> -->
   </div>
 </template>
 

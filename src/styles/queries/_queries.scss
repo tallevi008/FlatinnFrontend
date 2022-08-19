@@ -267,3 +267,51 @@
     }
 }
 /*********************************/
+
+/**  filter-queries  **/
+
+@media (max-width: 865px) {
+    .filter-container {
+        max-width: 783px;
+        .guest-search-container {
+            .guest-container {
+                width: 137px;
+            }
+        }
+        .search-btn {
+            margin-left: -26px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .filter-container {
+        max-width: 280px;
+        height: 50px;
+        .location-input-container {
+            .location-input-div {
+                width: 100%;
+                &:hover {
+                    background-color: transparent;
+                    border-radius: 0px;
+                }
+            }
+        }
+        .stay-filter-border,
+        .trip-dates-container {
+            display: none;
+        }
+        .guest-search-container {
+            width: 0px;
+            display: contents;
+            .guest-container {
+                display: none;
+            }
+        }
+        .search-btn {
+            margin-left: -40px;
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
