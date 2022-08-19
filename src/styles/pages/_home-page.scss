@@ -17,10 +17,10 @@
     text-align: center;
     // background-color: blue;
     top: 25%;
-    font-size: 60px;
     font-family: airbnb-medium;
     color: white;
     .sentence {
+      font-size: 60px;
       margin: auto 0;
       text-shadow: 1px -2px 3px rgba(0, 0, 0, 0.76);
     }
@@ -30,60 +30,6 @@
     }
   }
 }
-.host-container {
-  // background: black;
-
-  margin-top: 111px;
-  margin-left: 0;
-  margin-right: 0;
-  background: url("../assets/img/homepage/host2.jpg") no-repeat;
-  background-size: 100%;
-  height: 640px;
-  width: 100%;
-  background-position: 50%;
-
-  .host-title-container {
-    display: flex;
-    flex-direction: column;
-    width: 438px;
-    height: 294px;
-  }
-  .host-title {
-    position: relative;
-    top: 68px;
-    left: 57px;
-    // font-size: 49px;
-    // font-family: airbnb-bold;
-    // font-weight: 800;
-    // color: rgb(255, 255, 255);
-    // font-weight: 500;
-
-    font-family: airbnb-medium;
-    color: white;
-    font-size: 95px;
-    letter-spacing: -0.02em;
-    line-height: 98px;
-    white-space: pre-line;
-  }
-  .host-btn {
-    position: relative;
-    // font-size: 15.06px; //original
-    font-size: 15.5px; //original
-    font-weight: bold;
-    top: 195px;
-    width: 130px;
-    height: 50px;
-    left: 80px;
-    border-radius: 8px;
-    color: rgb(34, 34, 34);
-    background-color: white;
-    cursor: pointer;
-  }
-  .host-btn:hover {
-    background-color: #ebebeb;
-  }
-}
-
 .destenations {
   margin-top: 92px;
   width: 100%;
@@ -100,28 +46,18 @@
     font-size: 42px;
     font-weight: 400;
     font-family: airbnb-medium;
+    padding-left: 18px;
   }
-  // .dest-info {
-  //   .dest-img-con {
-  //     width: 100%;
-  //     height: 100%;
-  //     border: 1px solid black;
-  //     // background-color: white;
-  //     img {
-  //       width: 80%;
-  //       height: auto;
-  //       border-radius: 10px;
-  //     }
-  //   }
-  // }
+
   .dest-grid {
     display: grid;
     justify-self: center;
-    min-width: auto;
+    // min-width: auto;
     grid-template-columns: repeat(4, 0.2fr);
     justify-content: center;
-    // width: 100%;
-    gap: 2em;
+    width: 100%;
+    grid-column-gap: 1em;
+    margin-bottom: 48px;
     .dest-title {
       // font-size: 2vw;
       font-size: 1.3125rem; //21px
@@ -140,6 +76,50 @@
         cursor: pointer;
       }
     }
+  }
+}
+.host-container {
+  margin-top: 90px;
+  margin-left: 0;
+  margin-right: 0;
+  background: url("../assets/img/homepage/host2.jpg") no-repeat;
+  background-size: cover;
+  height: 640px;
+  width: 100%;
+
+  .host-title-container {
+    display: flex;
+    flex-direction: column;
+    width: 438px;
+    height: 294px;
+    .host-title {
+      position: relative;
+      top: 68px;
+      left: 57px;
+      font-family: airbnb-medium;
+      color: white;
+      font-size: 95px;
+      letter-spacing: -0.02em;
+      line-height: 98px;
+      white-space: pre-line;
+    }
+  }
+  .host-btn {
+    position: relative;
+    // font-size: 15.06px; //original
+    font-size: 15.5px; //original
+    font-weight: bold;
+    top: 195px;
+    width: 130px;
+    height: 50px;
+    left: 80px;
+    border-radius: 8px;
+    color: rgb(34, 34, 34);
+    background-color: white;
+    cursor: pointer;
+  }
+  .host-btn:hover {
+    background-color: #ebebeb;
   }
 }
 
