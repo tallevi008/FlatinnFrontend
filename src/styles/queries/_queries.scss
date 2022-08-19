@@ -210,22 +210,16 @@
     .app-footer {
         justify-content: space-around;
         flex-direction: column-reverse;
-        align-items: center;
+        // align-items: center;
         margin-top: 1px;
-        ar .app-footer-left-div {
-            flex-direction: column;
-            .app-footer-links {
-                align-self: center;
-                // .bullet-first {
-                //     display: none;
-                // }
-            }
+        .app-footer-left-div {
+            justify-content: center !important;
+            align-items: center !important;
+            width: 100%;
         }
+
         .footer-right-div {
             justify-content: center !important;
-            .app-footer-socials {
-                align-self: center;
-            }
         }
     }
 }
