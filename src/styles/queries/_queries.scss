@@ -212,14 +212,17 @@
         flex-direction: column-reverse;
         // align-items: center;
         margin-top: 1px;
-        .app-footer-left-div {
+        .app-footer-left-div,
+        .footer-right-div {
             justify-content: center !important;
             align-items: center !important;
             width: 100%;
         }
 
         .footer-right-div {
-            justify-content: center !important;
+            .app-footer-socials {
+                margin-left: 50px;
+            }
         }
     }
 }
